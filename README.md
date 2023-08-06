@@ -1,8 +1,18 @@
-# React + Vite
+# Todo app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Provided by [Front End Mentor](https://frontendmentor.io)
 
-Currently, two official plugins are available:
+![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Web app to save your todos remotly
+
+## Features
+
+- Authentication with your account to save todos
+- Add Todo
+- Modify todo pending or finished
+- Delete Todo
+
+## Learning outcomes
+
+- `writeBatch` and `runTransiction` in Firestore to perform multiple action
