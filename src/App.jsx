@@ -32,7 +32,7 @@ function App() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <Container maxWidth='sm' sx={{ py: 9 }}>
+      <Container maxWidth='sm' sx={{ py: 9 }} component='main'>
         <Header />
         {user && <TodoInput />}
         <Paper

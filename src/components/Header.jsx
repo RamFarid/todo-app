@@ -11,7 +11,10 @@ function Header() {
   return (
     <Stack direction='row' justifyContent='space-between' alignItems='center'>
       <Typography variant='h3' component='h1' color='#fff'>
-        TODOS <Typography>{user?.displayName}</Typography>
+        TODOS{' '}
+        <Typography component='span' display='block'>
+          {user?.displayName}
+        </Typography>
       </Typography>
       <Box>
         <ToggleThemeBtn />

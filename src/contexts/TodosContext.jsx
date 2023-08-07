@@ -37,8 +37,15 @@ function TodosContextProvider({ children }) {
         .then((snapshot) => {
           if (!snapshot.empty) {
             const data = []
-            snapshot.forEach((ss) => data.push({ ...ss.data(), id: ss.id }))
-            setTodos(data)
+            snapshot.forEach((ss) =>
+              data.push({
+                ...ss.data(),
+                id: ss.id,
+                createdAt: ss._document.createTime.timestamp.toMillis(),
+              })
+            )
+            const soretedData = data.sort((a, b) => b.createdAt - a.createdAt)
+            setTodos(soretedData)
           }
         })
         .catch((e) => {
